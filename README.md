@@ -1,10 +1,10 @@
-playwright-sample-project
-Overview:
+**playwright-sample-project**
+**Overview:**
 This is a sample Automation project using Playwright and Typescript and uses playwright-testrunner to execute test cases. This is a Data Driven framework focused on separating the test scripts logic and the test data from each other. This allows us to create test automation scripts by passing different sets of test data. The test data set is kept in an external Excel Sheet. The test scripts connect to the external Excel sheet to get the test data. This framework significantly reduces the number of test scripts compared to a modular based framework when we need to test for multiple sets of data for same functionality.
 
 For Demo purpose UI test cases are created on advantageonlineshopping.com site and API test cases are created on these SOAP API & REST API endpoints.
 
-Features
+**Features**
 This framework has built in library to operate on UI, API (both SOAP & REST API) and DB (MSSQL, DB2 & Oracle).
 Supports execution of tests in different browsers.
 Test data is stored in an Excel sheet and from this Excel sheet user can control the test cases that needs to be run.
@@ -23,11 +23,13 @@ Chrome - default browser
 Firefox
 MS Edge
 WebKit - web browser engine used by Safari
+
 Run Mode Details
 Mode	Execl Value	Description
 Normal	Blank	Runs the tests sequentially
 Serial	serial	Runs the tests sequentially. On test failure, all subsequent tests are skipped
 Parallel	parallel	Runs the tests parallelly, this is ideal when tests in the scenario are independent of one another
+
 Steps to use
 1. Installation
 Playwright framework requires Node.js v14+ to run.
@@ -37,7 +39,8 @@ Code from github need to be download OR cloned using git command.
 Installing the dependencies.
 
 npm ci
-2. Test creation
+
+Test creation
 Create Test file with extenstion .spec.ts. Eg LoginTest.spec.ts
 In the testData excel create a sheet with name of test. Eg. LoginTest
 Create a execution sheet and make an entry of new test case. Eg. in the Regression sheet add a row for new test LoginTest and update other columns like run, mode etc.
